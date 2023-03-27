@@ -25,6 +25,10 @@ defmodule Aidan.MixProject do
 
   defp deps do
     [
+      {:ecto, "~> 3.8"},
+      {:tesla, "~> 1.4"},
+      {:finch, "~> 0.14.0"},
+      {:jason, ">= 1.0.0"},
       {:ex_doc, "~> 0.27", only: :dev, runtime: false},
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
     ]
@@ -42,7 +46,7 @@ defmodule Aidan.MixProject do
   defp docs do
     [
       extras: [
-        "LICENSE": [title: "License"],
+        LICENSE: [title: "License"],
         "README.md": [title: "Overview"]
       ],
       main: "readme",
